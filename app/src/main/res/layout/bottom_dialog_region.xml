@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/supportedRegion"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    tools:context=".MapsActivity">
+
+    <TextView
+        android:id="@+id/regionSupported_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="@string/region_is_supported"
+        android:textColor="#2C2C2C"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="24dp"
+        android:background="#979797"
+        android:layerType="hardware" />
+
+    <Button
+        android:id="@+id/setPickUp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        android:backgroundTint="#212121"
+        android:text="@string/set_pick_up_btn"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>
