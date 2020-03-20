@@ -11,7 +11,7 @@
     tools:context=".MapsActivity">
 
     <TextView
-        android:id="@+id/regionSupported_text"
+        android:id="@+id/regionSupported"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="27dp"
