@@ -19,7 +19,8 @@
         android:gravity="center"
         android:text="@string/region_is_supported"
         android:textColor="#2C2C2C"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <View
         android:id="@+id/divider"
@@ -38,10 +39,12 @@
         android:layout_gravity="center"
         android:layout_marginStart="21dp"
         android:layout_marginEnd="21dp"
-        android:backgroundTint="#212121"
+        android:backgroundTint="#2C2C2C"
+        android:fontFamily="@font/roboto_bold"
         android:text="@string/set_pick_up_btn"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

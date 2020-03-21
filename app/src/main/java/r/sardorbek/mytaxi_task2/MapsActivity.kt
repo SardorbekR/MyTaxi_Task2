@@ -28,7 +28,7 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback {
         val pinPosition = LatLng(41.305859, 69.263757)
 
         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(pinPosition, 18.5.toFloat()), 1, null)
-        googleMap.addCircle(CircleOptions().center(pinPosition).radius(20000.0).strokeColor(Color.RED))
+        googleMap.addCircle(CircleOptions().center(pinPosition).radius(9500.0).strokeColor(Color.RED))
 
         //The center of radius
         centerPoint.latitude = pinPosition.latitude
@@ -41,7 +41,7 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback {
             val markerPosition = Location("Marker position")
             markerPosition.latitude = cameraLat
             markerPosition.longitude = cameraLong
-            if (centerPoint.distanceTo(markerPosition) > 20000) {
+            if (centerPoint.distanceTo(markerPosition) > 9500) {
                 BottomSheetDialogFragment().show(supportFragmentManager, "TAG")
             }
         }
@@ -53,7 +53,7 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback {
             val markerPosition = Location("Marker position")
             markerPosition.latitude = cameraLat
             markerPosition.longitude = cameraLong
-            if (centerPoint.distanceTo(markerPosition) > 20000) {
+            if (centerPoint.distanceTo(markerPosition) > 9500) {
                 regionSupported.text = getString(R.string.region_is_not_supported)
             } else {
                 regionSupported.text = getString(R.string.region_is_supported)
